@@ -22,7 +22,7 @@ function setupGrid(width)
 
     function changeColor(e){
         
-        e.target.style.backgroundColor = '#333333';
+        e.target.style.backgroundColor = '#334324';
     }
 
 
