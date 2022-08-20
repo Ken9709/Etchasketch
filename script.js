@@ -2,6 +2,23 @@ let size = 16;
 //let color = blue;
 
 const grid = document.querySelector('.grid-container');
+var rangeInput = document.getElementById("rangeinput").value;
+var buttonInput = document.getElementById("btn");
+
+if (buttonInput.addEventListener) {
+	buttonInput.addEventListener("click", slideVal);
+}
+else if (buttonInput.attachEvent) {
+	buttonInput.attachEvent('onclick', sliderVal);
+}
+
+function slideVal(e) {
+    // read the value from the slider:
+    var value = document.getElementById("rangeinput").value;
+    // now compare:
+    size = value;
+    console.log(size);
+}
 
 function setupGrid(width)
     {
@@ -23,6 +40,10 @@ function setupGrid(width)
     function changeColor(e){
         
         e.target.style.backgroundColor = '#334324';
+    }
+
+    function reload(){
+
     }
 
 
