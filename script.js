@@ -12,12 +12,14 @@ else if (buttonInput.attachEvent) {
 	buttonInput.attachEvent('onclick', sliderVal);
 }
 
+//reads the value from the slider on submission
+//as overall size
 function slideVal(e) {
     // read the value from the slider:
     var value = document.getElementById("rangeinput").value;
     // now compare:
     size = value;
-    console.log(size);
+    reload();
 }
 
 function setupGrid(width)
@@ -43,7 +45,12 @@ function setupGrid(width)
     }
 
     function reload(){
-
+        
+        grid.innerHTML = ''
+        var div = document.createElement("div");
+        div.classList.add('grid-container');
+        document.getElementById("main").appendChild(div);
+        setupGrid(size);
     }
 
 
