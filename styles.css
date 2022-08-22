@@ -1,19 +1,28 @@
 
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .grid-container {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 0px;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr) ;
-    background-color: #2196F3;
-    padding: 10px;
+    background-color: #000000;
+    padding: 5px;
+    margin: 0;
+    height: 600px;
+    width: 600px;
+    /* background-color: rgb(156, 156, 156); */
+    border: 1px solid rgb(148, 44, 44);
   }
   
 
   .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(152, 202, 151, 0.8);
     text-align: center;
-    padding: 20px 0;
+    padding: 5px 0;
     font-size: 30px;
   }
