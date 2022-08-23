@@ -10,7 +10,7 @@
     grid-gap: 0px;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr) ;
-    background-color: #000000;
+    background-color: #74aA87;
     padding: 5px;
     margin: 0;
     height: 600px;
